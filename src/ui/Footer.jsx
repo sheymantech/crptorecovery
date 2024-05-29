@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className=" w-full lg:px-32 px-6  py-10  ">
-      <div className="w-full justify-center items-center  sm:flex-nowrap flex-wrap gap-5">
-        <div className="flex flex-col justify-start items-center sm:w-2/4">
-          <div className="flex gap-x-5 ">
+    <div className="w-full lg:px-32 px-6 py-10">
+      <div className="w-full  flex flex-row justify-between items-start gap-10">
+        <div className=" flex flex-col justify-start items-center sm:w-[20rem]">
+          <div className="flex gap-x-5">
             <img className="w-[8rem]" src={footer1} alt="" />
             <img className="w-[8rem]" src={footer2} alt="" />
           </div>
@@ -19,7 +19,7 @@ function Footer() {
           </nav>
         </div>
 
-        <div className="flex flex-col gap-y-2 sm:w-1/3">
+        <div className=" sm:w-[20rem] flex flex-col gap-y-2">
           <span className="flex flex-nowrap items-center justify-center mt-5">
             <input
               type="text"
