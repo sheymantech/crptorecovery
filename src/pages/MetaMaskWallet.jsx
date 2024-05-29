@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import WalletUi from "../ui/WalletUi";
 
 function MetaMaskWallet() {
@@ -15,12 +16,16 @@ function MetaMaskWallet() {
             </p>
           </div>
           <div className="flex gap-x-5 flex-wrap gap-y-5">
-            <button className="bg-[#026ffa] hover:bg-[#0e34b2] rounded-lg font-semibold tracking-wide text-white py-2 px-5 text-lg ">
-              contact an expert
-            </button>
-            <button className="bg-transparent border border-gray-600 rounded-lg font-semibold tracking-wide py-2 px-5 text-lg text-gray-600 ">
-              Tell me more
-            </button>
+            <Link to="/contact">
+              <button className="bg-[#026ffa] hover:bg-[#0e34b2] rounded-lg font-semibold tracking-wide text-white py-2 px-5 text-lg ">
+                contact an expert
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="bg-transparent border border-gray-600 rounded-lg font-semibold tracking-wide py-2 px-5 text-lg text-gray-600 ">
+                Tell me more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

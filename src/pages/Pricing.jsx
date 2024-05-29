@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ActionSection from "../ui/ActionSection";
 
 const features = [
@@ -79,12 +80,13 @@ And here’s the best part: our service is risk-free! That means you only pay us
                 </ul>
               </div>
               <div className="mt-6 text-center">
-                <a
-                  href="/contact"
+                <Link
+                  to="/contact"
                   className="bg-[#0e34b2] text-white py-2 px-4 rounded-lg"
                 >
-                  I am Interested
-                </a>
+                  {" "}
+                  i am interested
+                </Link>
               </div>
             </div>
           </div>
