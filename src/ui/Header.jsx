@@ -34,7 +34,6 @@ function Header() {
 
   return (
     <>
-      <SumHeaderMsg />
       <div
         className={`flex justify-between items-center lg:px-32 pt-5 px-6 h-auto flex-wrap ${
           openMenu ? "justify-start text-left pb-14" : ""
