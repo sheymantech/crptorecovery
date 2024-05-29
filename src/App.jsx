@@ -20,10 +20,13 @@ import ElectrumWallet from "./pages/ElectrumWallet";
 import Press from "./pages/Press";
 import KnowledgeCenter from "./pages/KnowledgeCenter";
 
+import ScrollToTop from "./ui/ScrollToTop";
+
 function App() {
   return (
     <div className="">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Navigate replace to="home" />} />

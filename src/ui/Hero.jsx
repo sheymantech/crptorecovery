@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImg from "../img/crypto-hero.webp";
 
 function Hero() {
@@ -13,10 +14,11 @@ function Hero() {
         </p>
         <span className="w-full  flex sm:flex-row flex-col gap-5 mt-6">
           <button className="bg-[#026ffa] hover:bg-[#0e34b2] rounded-lg font-semibold tracking-wide text-white py-2 px-5 text-lg w-full sm:w-[28%] ">
-            Contact an expert
+            <Link to="/contact"> Contact an expert</Link>
           </button>
+
           <button className="bg-transparent border border-gray-600 rounded-lg font-semibold tracking-wide py-2 px-5 text-lg w-full text-gray-600 sm:w-[28%]">
-            Testimonials
+            <Link to="/testimonial"> Testimonials</Link>
           </button>
         </span>
       </div>

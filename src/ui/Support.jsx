@@ -2,6 +2,7 @@ import { FiMessageCircle } from "react-icons/fi";
 import { FaArrowRight } from "react-icons/fa";
 import { BsLightningCharge } from "react-icons/bs";
 import { SiBnbchain } from "react-icons/si";
+import { Link } from "react-router-dom";
 
 function Support() {
   return (
@@ -29,9 +30,11 @@ function Support() {
             wallet. Perhaps it involves different numbers or different
             capitalization than you remember.
           </p>
-          <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
-            Recover my password <FaArrowRight className="text-2xl ps-2" />
-          </button>
+          <Link to="/contact">
+            <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
+              Recover my password <FaArrowRight className="text-2xl ps-2" />
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-y-5 justify-center items-center tex-center sm:w-1/3">
           <span className="p-3  rounded-full flex justify-center items-center bg-[#8bb4e9] ">
@@ -44,9 +47,11 @@ function Support() {
             You wrote down a list of words, and the passphrase is some
             combination of those words.
           </p>
-          <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
-            Recover my seed <FaArrowRight className="text-2xl ps-2" />
-          </button>
+          <Link to="/contact">
+            <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
+              Recover my seed <FaArrowRight className="text-2xl ps-2" />
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-y-5 justify-center items-center tex-center sm:w-1/3">
           <span className="p-3  rounded-full flex justify-center items-center bg-[#8bb4e9] ">
@@ -59,9 +64,11 @@ function Support() {
             You have lost access to a common crypto asset, such as Bitcoin,
             Ethereum, Litecoin, Dogecoin, an NFT or dozens of other alt coins
           </p>
-          <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
-            Recover my wallet <FaArrowRight className="text-2xl ps-2" />
-          </button>
+          <Link to="/contact">
+            <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
+              Recover my wallet <FaArrowRight className="text-2xl ps-2" />
+            </button>
+          </Link>
         </div>
         <div className="flex flex-col gap-y-5 justify-center items-center tex-center sm:w-1/3">
           <span className="p-3  rounded-full flex justify-center items-center bg-[#8bb4e9] ">
@@ -75,9 +82,11 @@ function Support() {
             to build their case and hopefully uncover the real-world identity of
             their scammer.
           </p>
-          <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
-            Recover my wallet <FaArrowRight className="text-2xl ps-2" />
-          </button>
+          <Link to="/contact">
+            <button className="text-[#026ffa]  font-semibold text-lg flex justify-center items-center cursor-pointer">
+              Recover my wallet <FaArrowRight className="text-2xl ps-2" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

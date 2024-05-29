@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function ActionSection() {
   return (
     <div className="my-16 mx-6 lg:mx-32">
@@ -12,12 +14,16 @@ function ActionSection() {
           </p>
         </div>
         <div className="flex gap-x-5 flex-wrap gap-y-5">
-          <button className="bg-[#026ffa] hover:bg-[#0e34b2] rounded-lg font-semibold tracking-wide text-white py-2 px-5 text-lg ">
-            Get Started
-          </button>
-          <button className="bg-transparent border border-gray-600 rounded-lg font-semibold tracking-wide py-2 px-5 text-lg text-gray-600 ">
-            See Our Testimonials
-          </button>
+          <Link to="/contact">
+            <button className="bg-[#026ffa] hover:bg-[#0e34b2] rounded-lg font-semibold tracking-wide text-white py-2 px-5 text-lg ">
+              Get Started
+            </button>
+          </Link>
+          <Link to="/testimonial">
+            <button className="bg-transparent border border-gray-600 rounded-lg font-semibold tracking-wide py-2 px-5 text-lg text-gray-600 ">
+              See Our Testimonials
+            </button>
+          </Link>
         </div>
       </div>
     </div>

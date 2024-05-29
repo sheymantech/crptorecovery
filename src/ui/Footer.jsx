@@ -1,5 +1,6 @@
 import footer1 from "../img/crypto-logo.png";
 import footer2 from "../img/crypto-footer-logo-2.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,11 +12,10 @@ function Footer() {
             <img className="w-[8rem]" src={footer2} alt="" />
           </div>
           <nav className="flex flex-col gap-y-4 text-left text-gray-600 mt-4 sm:mr-0 mr-auto">
-            <p>About us</p>
-            <p>Testimonials</p>
-            <p>Pricing</p>
-            <p>Press</p>
-            <p>Legal</p>
+            <Link to="/about">About us</Link>
+            <Link to="/testimonial">Testimonials</Link>
+            <Link to="/pricing">Pricing</Link>
+            <Link to="/press">Press</Link>
           </nav>
         </div>
 
