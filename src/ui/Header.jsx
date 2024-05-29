@@ -59,6 +59,8 @@ function Header() {
           <p className=" mr-auto">Home</p>
           <p
             onClick={toggleResources}
+            onMouseEnter={toggleResources}
+            onMouseLeave={toggleResources}
             className={`flex flex-nowrap gap-x-1 justify-center items-center relative mr-auto ${
               openResources ? "w-full" : ""
             }`}
@@ -128,6 +130,8 @@ function Header() {
           </p>
           <p
             onClick={toggleWallet}
+            onMouseEnter={toggleWallet}
+            onMouseLeave={toggleWallet}
             className={`flex flex-nowrap gap-x-1 justify-center items-center relative mr-auto ${
               openWallet ? "w-full" : ""
             }`}

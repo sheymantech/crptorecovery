@@ -1,5 +1,7 @@
 import ActionSection from "../ui/ActionSection";
 
+import { Link } from "react-router-dom";
+
 function ScamTracing() {
   return (
     <>
@@ -16,12 +18,11 @@ function ScamTracing() {
               </p>
             </div>
             <div className="mt-6">
-              <a
-                href="#contact-form"
-                className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700"
-              >
-                Begin your free consultation
-              </a>
+              <Link to="/contact">
+                <button className="px-6 py-3 bg-blue-600 text-white rounded-lg text-lg hover:bg-blue-700">
+                  Begin your free consultation
+                </button>
+              </Link>
             </div>
             <div className="mt-8 flex flex-col space-y-4">
               <div className="flex items-center space-x-2">
