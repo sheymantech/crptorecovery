@@ -1,8 +1,8 @@
 function Press() {
   return (
-    <div className="flex flex-col text-gray-600">
-      <div className="text-xl font-semibold">Press</div>
-      <h2 className="text-2xl font-medium mt-2">Our Mentions</h2>
+    <div className="flex flex-col text-gray-600 lg:px-32 px-6 my-16">
+      <div className="text-xl font-semibold text-[#0e34b2] mt-5">Press</div>
+      <h2 className="text-2xl font-semibold mt-2">Our Mentions</h2>
       <div className="my-4"></div>
       <p className="text-lg">
         Crypto Asset Recovery has been featured in major publications such as

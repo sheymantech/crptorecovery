@@ -17,6 +17,7 @@ import BlockchainWallet from "./pages/BlockchainWallet";
 import MultibitWallet from "./pages/MultibitWallet";
 import MetaMaskWallet from "./pages/MetaMaskWallet";
 import ElectrumWallet from "./pages/ElectrumWallet";
+import Press from "./pages/Press";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path="/pricing" element={<Pricing />} />
             <Route path="/scamtracing" element={<ScamTracing />} />
             <Route path="/testimonial" element={<Testimonial />} />
+            <Route path="/press" element={<Press />} />
             <Route path="/wallets/bitcoin-core" element={<BitcoinWallet />} />
             <Route
               path="/wallets/blockchain-com"
