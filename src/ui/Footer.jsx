@@ -1,8 +1,11 @@
 import footer1 from "../img/crypto-logo.png";
 import footer2 from "../img/crypto-footer-logo-2.png";
 import { Link } from "react-router-dom";
+import { toast } from "react-hot-toast";
+import { useState } from "react";
 
 function Footer() {
+  const [mail, setMail] = useState("");
   return (
     <div className="w-full lg:px-32 px-6 py-10">
       <div className="w-full  flex flex-row justify-between items-start gap-10 flex-wrap">
@@ -20,13 +23,23 @@ function Footer() {
         </div>
 
         <div className=" sm:w-[20rem] flex flex-col gap-y-2">
-          <span className="flex flex-nowrap items-center justify-center mt-5">
+          <span className="flex flex-nowrap items-center justify-center text-gray-600 mt-5">
             <input
-              type="text"
+              onChange={(e) => setMail(e.target.value)}
+              type="mail"
               className="outline-none border-[#026ffa] border-4 rounded-lg py-2 px-4"
               placeholder="Enter your email"
             />
-            <button className="bg-[#026ffa] text-white ms-[-1rem] text-semibold py-[11.2px] px-3 rounded-r-lg">
+            <button
+              onClick={() => {
+                if (mail === "")
+                  return toast.error("please enter a valid email address");
+                toast.success("you have successfully subscribed!");
+
+                setMail("");
+              }}
+              className="bg-[#026ffa] text-white ms-[-1rem] text-semibold py-[11.2px] px-3 rounded-r-lg"
+            >
               Subscribe
             </button>
           </span>
