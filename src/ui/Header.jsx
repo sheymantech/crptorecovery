@@ -16,6 +16,8 @@ import multibit from "../img/crypto-multibit.png";
 import blockchain from "../img/crypto-blockchain.png";
 import bitcoin from "../img/crypto-bitcoin.png";
 
+import { motion } from "framer-motion";
+
 function Header() {
   const [openSubMenu, setOpenSubMenu] = useState(false);
   const [openResources, setOpenResources] = useState(false);
@@ -35,7 +37,10 @@ function Header() {
 
   return (
     <>
-      <div
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1 }}
         className={`flex justify-between items-center lg:px-32 pt-5 px-6 h-auto flex-wrap ${
           openMenu ? " text-left pb-14" : ""
         }`}
@@ -284,7 +289,7 @@ function Header() {
             Contact us
           </button>
         </Link>
-      </div>
+      </motion.div>
     </>
   );
 }

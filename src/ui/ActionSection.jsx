@@ -1,9 +1,16 @@
 import { Link } from "react-router-dom";
 
+import { motion } from "framer-motion";
+
 function ActionSection() {
   return (
     <div className="my-16 mx-6 lg:mx-32">
-      <div className="px-6 py-10 flex flex-wrap items-center lg:justify-between justify-start gap-5 my-16 bg-[#f9fafb] rounded-lg lg:flex-nowrap gap-y-5">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="px-6 py-10 flex flex-wrap items-center lg:justify-between justify-start gap-5 my-16 bg-[#f9fafb] rounded-lg lg:flex-nowrap gap-y-5"
+      >
         <div>
           <h2 className="font-semibold text-gray-800 text-2xl tracking-wide">
             Your keys, back in your pocket
@@ -25,7 +32,7 @@ function ActionSection() {
             </button>
           </Link>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

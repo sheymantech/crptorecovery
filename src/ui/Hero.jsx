@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import heroImg from "../img/crypto-hero.webp";
 
+import { motion } from "framer-motion";
+
 function Hero() {
   return (
     <div className="lg:px-32 sm:px-10 px-6 flex flex-wrap justify-center items-center gap-5 w-full text-left mt-14 ">
-      <div className="flex flex-col gap-y-4 py-14">
+      <motion.div
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col gap-y-4 py-14"
+      >
         <h1 className="font-bold text-4xl tracking-wide text-gray-800">
           Easy, Transparent Wallet Recovery
         </h1>
@@ -21,10 +28,14 @@ function Hero() {
             <Link to="/testimonial"> Testimonials</Link>
           </button>
         </span>
-      </div>
-      <div>
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1 }}
+      >
         <img src={heroImg} alt="" />
-      </div>
+      </motion.div>
     </div>
   );
 }
