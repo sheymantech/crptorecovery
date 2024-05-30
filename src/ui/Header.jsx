@@ -30,6 +30,7 @@ function Header() {
   }
   function toggleWallet() {
     setOpenWallet(!openWallet);
+    setOpenResources(false);
   }
 
   return (
@@ -82,7 +83,7 @@ function Header() {
             )}
             {openResources && (
               <div
-                className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex sm:gap-y-2  flex-col gap-x-2 py-3 items-center justify-center z-50 top-5 sm:h-[23rem] text-center ${
+                className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex py-4  flex-col gap-x-2  items-center justify-center z-50 top-8  text-center ${
                   openResources ? "h-auto gap-y-5 bg-white z-50 top-10" : ""
                 }`}
               >
@@ -139,8 +140,8 @@ function Header() {
                   </div>
                 </Link>
                 <Link onClick={() => setOpenMenu(false)} to="/contact">
-                  <button className=" mt-2 w-full py-2 px-2 text-center bg-[#eff1fa] rounded-lg text-[#0e34b2] font-semibold tracking-wide cursor-pointer">
-                    recover your wallet
+                  <button className=" w-full py-1  px-2 text-center bg-[#eff1fa] rounded-lg text-[#0e34b2] font-semibold tracking-wide cursor-pointer text-sm">
+                    Recover your wallet
                   </button>
                 </Link>
               </div>
@@ -162,7 +163,7 @@ function Header() {
             )}
             {openWallet && (
               <div
-                className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex sm:gap-y-2  flex-col gap-x-2 py-3 items-center justify-center z-50 top-5 sm:h-[23rem] text-center ${
+                className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex py-4  flex-col gap-x-2  items-center justify-center z-50 top-8  text-center ${
                   openWallet ? "h-auto gap-y-5 bg-white z-50 top-10" : ""
                 }`}
               >
@@ -239,8 +240,8 @@ function Header() {
                   </div>
                 </Link>
                 <Link onClick={() => setOpenMenu(false)} to="/contact">
-                  <button className=" mt-2 w-full py-2 px-2 text-center bg-[#eff1fa] rounded-lg text-[#0e34b2] font-semibold tracking-wide cursor-pointer">
-                    recover your wallet
+                  <button className=" w-full py-1  px-2 text-center bg-[#eff1fa] rounded-lg text-[#0e34b2] font-semibold tracking-wide cursor-pointer text-sm">
+                    Recover your wallet
                   </button>
                 </Link>
               </div>
