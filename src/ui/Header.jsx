@@ -69,8 +69,7 @@ function Header() {
           </Link>
           <p
             onClick={toggleResources}
-            onMouseEnter={toggleResources}
-            onMouseLeave={toggleResources}
+            onMouseEnter={() => setOpenResources(true)}
             className={`flex flex-nowrap gap-x-1 justify-center items-center relative mr-auto ${
               openResources ? "w-full" : ""
             }`}
@@ -83,6 +82,7 @@ function Header() {
             )}
             {openResources && (
               <div
+                onMouseLeave={() => setOpenResources(false)}
                 className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex py-4  flex-col gap-x-2  items-center justify-center z-50 top-8  text-center ${
                   openResources ? "h-auto gap-y-5 bg-white z-50 top-10" : ""
                 }`}
@@ -149,8 +149,7 @@ function Header() {
           </p>
           <p
             onClick={toggleWallet}
-            onMouseEnter={toggleWallet}
-            onMouseLeave={toggleWallet}
+            onMouseEnter={() => setOpenWallet(true)}
             className={`flex flex-nowrap gap-x-1 justify-center items-center relative mr-auto ${
               openWallet ? "w-full" : ""
             }`}
@@ -163,6 +162,7 @@ function Header() {
             )}
             {openWallet && (
               <div
+                onMouseLeave={() => setOpenWallet(false)}
                 className={`px-2 absolute left-0 right-0 shadow-md shadow-gray-600/20 flex py-4  flex-col gap-x-2  items-center justify-center z-50 top-8  text-center ${
                   openWallet ? "h-auto gap-y-5 bg-white z-50 top-10" : ""
                 }`}
