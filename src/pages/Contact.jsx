@@ -126,7 +126,7 @@ function Contact() {
           ))}
         </div>
 
-        <form ref={form} onSubmit={sendEmail}>
+        <form className="text-gray-600" ref={form} onSubmit={sendEmail}>
           <div className="my-3 flex">
             <p>
               <label htmlFor="firstname" className="font-bold">
